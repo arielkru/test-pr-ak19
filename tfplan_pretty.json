@@ -1,0 +1,311 @@
+{
+    "format_version": "1.0",
+    "terraform_version": "1.1.7",
+    "variables":
+    {
+        "client_id_remote":
+        {
+            "value": "1f25dae2-7a5e-4e50-a5b6-dee97aac58b6"
+        },
+        "client_secret_remote":
+        {
+            "value": "12M8Q~UOgb2OfsaxRKiT7lIrPkUFUHKa6CqeSbG7"
+        }
+    },
+    "planned_values":
+    {
+        "outputs":
+        {},
+        "root_module":
+        {
+            "child_modules":
+            [
+                {
+                    "resources":
+                    [
+                        {
+                            "address": "module.test.azurerm_key_vault_secret.sb_primary_cs[\"te-st123-abcdse-02\"]",
+                            "mode": "managed",
+                            "type": "azurerm_key_vault_secret",
+                            "name": "te_st123",
+                            "index": "te-st123-abcdse-02",
+                            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                            "schema_version": 0,
+                            "values":
+                            {
+                                "content_type": "",
+                                "expiration_date": null,
+                                "id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-cs/352d0b63ac873c528170cb366b570da5",
+                                "key_vault_id": "/subscriptions/resourceGroups/",
+                                "name": "sb-nau2d-bsn00vn34-01-primary-cs",
+                                "not_before_date": null,
+                                "resource_id": "/subscriptions/resourceGroups/",
+                                "resource_versionless_id": "/subscriptions/resourceGroups/",
+                                "tags":
+                                {},
+                                "timeouts": null,
+                                "value": "Endpoint=sb://te-st123-abcdse-02.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=IClnjeTb8fgd14LyV9m1qG0xvFfUyQY3qHq/slUIrk5=",
+                                "version": "123d0b12ab123c123456ab123e120bc1",
+                                "versionless_id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02"
+                            },
+                            "sensitive_values":
+                            {
+                                "tags":
+                                {},
+                                "value": true
+                            }
+                        },
+                        {
+                            "address": "module.iaas.azurerm_key_vault_secret.te_primary_key[\"te-st123-abcdse-02\"]",
+                            "mode": "managed",
+                            "type": "azurerm_key_vault_secret",
+                            "name": "te_st01_key",
+                            "index": "te-st123-abcdse-02",
+                            "provider_name": "registry.terraform.io/hashicorp/testvault",
+                            "schema_version": 0,
+                            "values":
+                            {
+                                "content_type": "",
+                                "expiration_date": null,
+                                "id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-key/45f9aa2bd1512f12bb91236253vc7587",
+                                "key_vault_id": "/subscriptions/",
+                                "name": "te-st123-abcdse-02-primary-key",
+                                "not_before_date": null,
+                                "resource_id": "/subscriptions/",
+                                "resource_versionless_id": "/subscriptions/",
+                                "tags":
+                                {},
+                                "timeouts": null,
+                                "value": "IBbndrTb8fgd12LyV1m3qG9xvFfUyQU7uHz/zlUTyg5=",
+                                "version": "12f3aa4bg1234f20bb01526253ed1234",
+                                "versionless_id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-key"
+                            },
+                            "sensitive_values":
+                            {
+                                "tags":
+                                {},
+                                "value": true
+                            }
+                        },
+                        {
+                            "address": "module.iaas.azurerm_key_vault_secret.te_primary_key[\"te-st123-abcdse-02\"]",
+                            "mode": "managed",
+                            "type": "azurerm_mssql_server_vulnerability_assessment",
+                            "name": "te_st01_key",
+                            "index": "te-st123-abcdse-02",
+                            "provider_name": "registry.terraform.io/hashicorp/testvault",
+                            "schema_version": 0,
+                            "values":
+                            {
+                                "content_type": "",
+                                "expiration_date": null,
+                                "storage_container_path": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-key/45f9aa2bd1512f12bb91236253vc7587",
+                                "key_vault_id": "/subscriptions/",
+                                "name": "te-st123-abcdse-02-primary-key"
+                            },
+                            "sensitive_values":
+                            {
+                                "tags":
+                                {},
+                                "value": true
+                            }
+                        }
+                    ],
+                    "address": "module.testvault"
+                }
+            ]
+        }
+    },
+    "resource_changes":
+    [
+        {
+            "address": "module.testvault.azurerm_key_vault_secret.te_primary_cs[\"te-st123-abcdse-02\"]",
+            "module_address": "module.testvault",
+            "mode": "managed",
+            "type": "azurerm_key_vault_secret",
+            "name": "te_primary_cs",
+            "index": "te-st123-abcdse-02",
+            "provider_name": "registry.terraform.io/hashicorp/testvault",
+            "change":
+            {
+                "actions":
+                [
+                    "no-op"
+                ],
+                "before":
+                {
+                    "content_type": "",
+                    "expiration_date": null,
+                    "id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-cs/",
+                    "key_vault_id": "/subscriptions/",
+                    "name": "te-st123-abcdse-02-primary-cs",
+                    "not_before_date": null,
+                    "resource_id": "/subscriptions/",
+                    "resource_versionless_id": "/subscriptions/",
+                    "tags":
+                    {},
+                    "timeouts": null,
+                    "value": "Endpoint=sb://te-st123-abcdse-02.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=IClnjeTb8fgd14LyV9m1qG0xvFfUyQY3qHq/slUIrk4=",
+                    "version": "1234",
+                    "versionless_id": "1234"
+                },
+                "after":
+                {
+                    "content_type": "",
+                    "expiration_date": null,
+                    "id": "https://te-st123-abcdse-02.vault.azure.net/secrets/te-st123-abcdse-02-primary-cs/",
+                    "key_vault_id": "/subscriptions/",
+                    "name": "te-st123-abcdse-02-primary-cs",
+                    "not_before_date": null,
+                    "resource_id": "/subscriptions/",
+                    "resource_versionless_id": "/subscriptions/",
+                    "tags":
+                    {},
+                    "timeouts": null,
+                    "value": "Endpoint=sb://te-st123-abcdse-02.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=IClnjeTb8fgd14LyV9m1qG0xvFfUyQY3qHq/slUIrk5=",
+                    "version": "1234",
+                    "versionless_id": "1234"
+                },
+                "after_unknown":
+                {},
+                "before_sensitive":
+                {
+                    "tags":
+                    {},
+                    "value": true
+                },
+                "after_sensitive":
+                {
+                    "tags":
+                    {},
+                    "value": true
+                }
+            }
+        }
+    ],
+    "output_changes":
+    {
+        "ResourceName":
+        {
+            "actions":
+            [
+                "no-op"
+            ],
+            "before":
+            [
+                "nametest-01"
+            ],
+            "after":
+            [
+                "nametest-02"
+            ],
+            "after_unknown": false,
+            "before_sensitive": false,
+            "after_sensitive": false
+        },
+        "vm":
+        {
+            "actions":
+            [
+                "no-op"
+            ],
+            "before":
+            {},
+            "after":
+            {},
+            "after_unknown": false,
+            "before_sensitive": false,
+            "after_sensitive": false
+        }
+    },
+    "prior_state":
+    {
+        "format_version": "1.0",
+        "terraform_version": "1.1.7",
+        "values":
+        {
+            "outputs":
+            {
+                "ResourceName":
+                {
+                    "sensitive": false,
+                    "value":
+                    [
+                        "te-st123-abcdse-02"
+                    ]
+                },
+                "vm":
+                {
+                    "sensitive": false,
+                    "value":
+                    {}
+                }
+            },
+            "root_module":
+            {
+                "child_modules":
+                [
+                    {
+                        "resources":
+                        [
+                            {
+                                "address": "module.iaas.azurerm_key_vault_secret.te_primary_cs[\"te-st123-abcdse-02\"]",
+                                "mode": "managed",
+                                "type": "azurerm_key_vault_secret",
+                                "name": "te_primary_cs",
+                                "index": "te-st123-abcdse-02",
+                                "provider_name": "registry.terraform.io/hashicorp/testvault",
+                                "schema_version": 0,
+                                "values":
+                                {
+                                    "content_type": "",
+                                    "expiration_date": null,
+                                    "id": "1234",
+                                    "key_vault_id": "/subscriptions/",
+                                    "name": "te-st123-abcdse-02-primary-cs",
+                                    "not_before_date": null,
+                                    "resource_id": "/subscriptions/",
+                                    "resource_versionless_id": "/subscriptions/",
+                                    "tags":
+                                    {},
+                                    "timeouts": null,
+                                    "value": "Endpoint=sb://te-st123-abcdse-02.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=IClnjeTb8fgd14LyV9m1qG0xvFfUyQY3qHq/slUIrk5=",
+                                    "version": "1233",
+                                    "versionless_id": "1234"
+                                },
+                                "sensitive_values":
+                                {
+                                    "tags":
+                                    {},
+                                    "value": true
+                                },
+                                "depends_on":
+                                [
+                                    "module.testvault.azurerm_resource_group.resource_group"
+                                ]
+                            }
+                        ],
+                        "address": "module.test"
+                    }
+                ]
+            }
+        }
+    },
+    "configuration":
+    {
+        "provider_config":
+        {
+            "azurerm":
+            {
+                "name": "azurerm",
+                "expressions":
+                {
+                    "features":
+                    [
+                        {}
+                    ]
+                }
+            }
+        }
+    }
+}
